@@ -16,6 +16,7 @@ then
     sudo add-apt-repository ppa:deadsnakes/ppa -y
 
     # TODO: Allow arbitrary version choice (input)
+    echo "Adding python3.11"
     sudo apt-get install python3.11 python3.11-distutils -y
     python3.11 get-pip.py
     python3.11 -m pip install virtualenv

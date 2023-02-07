@@ -1,7 +1,5 @@
 #!/bin/bash
 echo "Upgrading Ubuntu"
-sudo apt update -y
-sudo apt upgrade -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
 echo "Finished upgrading Ubuntu"
@@ -17,3 +15,4 @@ git config --global core.filemode false
 
 echo "Make sure ~/.bash_aliases exists"
 touch ~/.bash_aliases
+
