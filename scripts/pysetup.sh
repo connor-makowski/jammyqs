@@ -7,6 +7,9 @@ echo "Setting up pip and virtualenv for python3.10"
 python3.10 get-pip.py
 python3.10 -m pip install virtualenv
 
+echo "Installing python3-dev to get python headers"
+sudo apt-get install python3-dev -y
+
 echo "Setup Additional Python Versions (via the deadsnakes ppa)? (y/n)"
 read AddPy
 
@@ -17,7 +20,7 @@ then
 
     # TODO: Allow arbitrary version choice (input)
     echo "Adding python3.11"
-    sudo apt-get install python3.11 python3.11-distutils -y
+    sudo apt-get install python3.11 python3.11-distutils python3.11-dev -y
     python3.11 get-pip.py
     python3.11 -m pip install virtualenv
 
